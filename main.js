@@ -7,5 +7,10 @@ window.addEventListener("resize",()=>{
     }else {
         initial_hight=window.innerHeight;
         assist_box.style.display="none";
+        alert("タッチキーボードがなくなりました")
     }
+});
+
+document.querySelectorAll("#assist>button").forEach(el=>{
+    el.addEventListener("click",e=>{e.preventDefault()});
 });
